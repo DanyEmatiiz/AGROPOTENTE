@@ -54,16 +54,16 @@ h1.title {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 40px 20px;
   gap: 20px;
+  padding: 40px 20px;
 }
 
 .informationText {
   background-color: #35682d;
   color: whitesmoke;
   padding: 20px;
-  flex: 1 1 300px;
   border-radius: 8px;
+  flex: 1 1 300px;
   min-width: 280px;
 }
 
@@ -88,27 +88,29 @@ h1.title {
 .infoProduct {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   gap: 20px;
 }
 
 .infoText {
   background-color: #35682d;
   color: whitesmoke;
-  padding: 40px 20px;
-  flex: 1 1 300px;
+  padding: 20px;
   border-radius: 8px;
+  flex: 1 1 300px;
   min-width: 280px;
+  max-width: 600px;
 }
 
 .infoProduct img {
-  max-width: 100%;
-  width: 300px;
+  flex: 1 1 300px;
+  max-width: 300px;
+  width: 100%;
   border-radius: 8px;
+  object-fit: cover;
 }
 
-
+/* 🔽 MEDIA QUERIES 🔽 */
 @media (max-width: 768px) {
   .productos {
     flex-direction: column;
@@ -117,21 +119,27 @@ h1.title {
 
   .generalInformation {
     flex-direction: column;
+    align-items: center;
   }
 
   .infoProduct {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .infoText,
+  .informationText {
+    width: 100%;
+  }
+
+  .infoProduct img {
+    width: 100%;
+    max-width: 100%;
   }
 
   .btn {
     width: 100%;
-  }
-
-  h1.title {
-    font-size: 24px;
-  }
-
-  .infoText, .informationText {
-    font-size: 16px;
+    max-width: none;
   }
 }
+
