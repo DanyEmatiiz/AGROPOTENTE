@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -13,8 +14,6 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
   font-family: Arial, sans-serif;
-   max-width: 100%;
-  height: auto;
 }
 
 h1.title {
@@ -31,7 +30,8 @@ h1.title {
 
 .productos {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   padding: 20px;
   background-color: rgba(53, 104, 45, 0.9);
@@ -42,15 +42,18 @@ h1.title {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 8px;
-  flex: 1;
   text-align: center;
   color: aliceblue;
   font-size: larger;
+  text-decoration: none;
+  flex: 1 1 150px;
+  max-width: 200px;
 }
 
 .generalInformation {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 40px 20px;
   gap: 20px;
 }
@@ -59,12 +62,13 @@ h1.title {
   background-color: #35682d;
   color: whitesmoke;
   padding: 20px;
-  flex: 1;
+  flex: 1 1 300px;
   border-radius: 8px;
+  min-width: 280px;
 }
 
 .imagenInformation {
-  flex: 1;
+  flex: 1 1 300px;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url('imagenes/quimico.png');
@@ -72,8 +76,6 @@ h1.title {
   background-position: center;
   min-height: 250px;
   border-radius: 8px;
-   max-width: 100%;
-  height: auto;
 }
 
 .infoProducts {
@@ -85,26 +87,51 @@ h1.title {
 
 .infoProduct {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .infoText {
   background-color: #35682d;
   color: whitesmoke;
   padding: 40px 20px;
-  flex: 1;
+  flex: 1 1 300px;
   border-radius: 8px;
-  min-width: 300px;
+  min-width: 280px;
 }
 
 .infoProduct img {
+  max-width: 100%;
   width: 300px;
   border-radius: 8px;
-  display: block;
-   max-width: 100%;
-  height: auto;
 }
 
+
+@media (max-width: 768px) {
+  .productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .generalInformation {
+    flex-direction: column;
+  }
+
+  .infoProduct {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  h1.title {
+    font-size: 24px;
+  }
+
+  .infoText, .informationText {
+    font-size: 16px;
+  }
+}
