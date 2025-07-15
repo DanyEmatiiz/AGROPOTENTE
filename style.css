@@ -13,6 +13,8 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
   font-family: Arial, sans-serif;
+   max-width: 100%;
+  height: auto;
 }
 
 h1.title {
@@ -70,6 +72,8 @@ h1.title {
   background-position: center;
   min-height: 250px;
   border-radius: 8px;
+   max-width: 100%;
+  height: auto;
 }
 
 .infoProducts {
@@ -100,5 +104,7 @@ h1.title {
   width: 300px;
   border-radius: 8px;
   display: block;
+   max-width: 100%;
+  height: auto;
 }
 
