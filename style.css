@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url('imagenes/fondo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+h1.title {
+  color: whitesmoke;
+  background-color: #35682d;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.greebox {
+  padding: 20px;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgba(53, 104, 45, 0.9);
+  color: whitesmoke;
+}
+
+.btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+  color: aliceblue;
+  font-size: larger;
+}
+
+.generalInformation {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.informationText {
+  background-color: #35682d;
+  color: whitesmoke;
+  padding: 20px;
+  flex: 1;
+  border-radius: 8px;
+}
+
+.imagenInformation {
+  flex: 1;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('imagenes/quimico.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+  border-radius: 8px;
+}
+
+.infoProducts {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.infoProduct {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.infoText {
+  background-color: #35682d;
+  color: whitesmoke;
+  padding: 40px 20px;
+  flex: 1;
+  border-radius: 8px;
+  min-width: 300px;
+}
+
+.infoProduct img {
+  width: 300px;
+  border-radius: 8px;
+  display: block;
+}
+
