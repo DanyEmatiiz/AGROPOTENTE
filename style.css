@@ -110,7 +110,7 @@ h1.title {
   object-fit: cover;
 }
 
-/* 🔽 MEDIA QUERIES 🔽 */
+
 @media (max-width: 768px) {
   .productos {
     flex-direction: column;
@@ -143,3 +143,13 @@ h1.title {
   }
 }
 
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.footer a {
+  color: #a3d977;
+  text-decoration: none;
+}
